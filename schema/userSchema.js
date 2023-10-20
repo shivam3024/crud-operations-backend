@@ -18,10 +18,6 @@ const userSchema = mongoose.Schema({
     type: String,
     required: true,
   },
-  // name: String,
-  // username: String,
-  // email: String,
-  // phone: String,
 });
 //autoIncrement.initialize(mongoose.connection);
 //userSchema.plugin(autoIncrement.plugin, "data");

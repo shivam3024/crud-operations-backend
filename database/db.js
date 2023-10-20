@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 
-const connection = async (username, password) => {
-  const URL = `mongodb+srv://${username}:${password}@cluster0.hf8rnai.mongodb.net/`;
+const connection = async (DBURL) => {
+  const URL = DBURL;
   // const URL = "mongodb://localhost:27017/UserData";
   try {
     await mongoose.connect(URL, {
